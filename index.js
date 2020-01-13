@@ -1,5 +1,6 @@
 const farmAnimals = 'cow horse sheep pig chicken'
 
+
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
 const muppet = {
@@ -47,3 +48,13 @@ const k_muppet = {
 
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+
+let [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ')
+let [Bessie, , Dolly, Babe, Little] = farmAnimals.split(' ')
+let [black_and_white,, black, pink,] = farmAnimals.split(' ')
+let [red, orange, yellow, green, blue, indigo, violet] = colors
+let [r, o, y, g, b, i, v] = colors
+let [,,,,,indg,] = colors
+let {name, color, song, job, partner} = muppet
+let {k_color, k_partner, k_job} = k_muppet
+let {song_2, song_4} = k_muppet.k_album.the_muppet_movie
